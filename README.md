@@ -1,15 +1,17 @@
 # Alba Favicon Service
 This service provides Alba with favicons for websites in search results.
 
-Privacy and Terms of Service available at [alba.quest/legal](https://alba.quest/legal).
+Privacy and<> Terms of Service available at [alba.quest/legal](https://alba.quest/legal).
 
 ## Availability
 This service has two endpoints:
 
 - **Origin:** [favicons.alba.quest](https://favicons.alba.quest)
+
 The CDN endpoint has additional CDN and browser caching configurations to reduce load on the origin server. If you require the latest favicon verison, use the origin endpoint. 
 
 - 🚀 **CDN:** [favicons-cdn.alba.quest](https://favicons-cdn.alba.quest)
+
 If you do not require the latest favicon version and prefer a fast response, please use the CDN endpoint. It might take up to 12 hours for new favicons to be available on the CDN endpoint.
 
 ## Usage
