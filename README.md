@@ -8,7 +8,14 @@ This service has two endpoints:
 - Origin: [favicons.alba.quest](https://favicons.alba.quest)
 - CDN: [favicons-cdn.alba.quest](https://favicons-cdn.alba.quest)
 
-The CDN endpoint has additional CDN and browser caching configurations to reduce load on the origin server. If you require the latest favicon verison, use the origin endpoint. If you do not require the latest favicon version, please use the CDN endpoint. It might take up to 12 hours for new favicons to be available on the CDN endpoint.
+The CDN endpoint has additional CDN and browser caching configurations to reduce load on the origin server. If you require the latest favicon verison, use the origin endpoint. If you do not require the latest favicon version and prefer a fast response, please use the CDN endpoint. It might take up to 12 hours for new favicons to be available on the CDN endpoint.
+
+### Usage
+To request a favicon, use the following request pattern:
+```http
+GET  https://favicons.alba.quest/get?url=https://example.com
+```
+The favicon for the URL will be returned as a WEBP image with a file size of 16x16 pixels. If no favicon is available, a fallback favicon will be returned.
 
 ### Development
 1. Clone the repository
