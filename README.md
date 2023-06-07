@@ -13,7 +13,7 @@ The CDN endpoint has additional CDN and browser caching configurations to reduce
 ## Usage
 To request a favicon, use the following request pattern:
 ```http
-GET  https://favicons.alba.quest/get?url=https://example.com
+GET  https://favicons-cdn.alba.quest/get?url=https://example.com
 ```
 The favicon for the URL will be returned as a WEBP image with a file size of 16x16 pixels. If no favicon is available, a fallback favicon will be returned.
 
